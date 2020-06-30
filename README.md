@@ -1,0 +1,3 @@
+# Django project! 
+It is a user forum, let's post here.
+Post post post...
