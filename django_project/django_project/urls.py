@@ -15,10 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from users import views as user_views
 #1.when we click 127.0.0.1/blog -> 1st it will come to this file
 #2.then find if there is a path of 'blog/'
 #3.then it will check where this path route to. 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('register/', user_views.register, name = 'register'),
     path('', include('blog.urls')),
 ]
