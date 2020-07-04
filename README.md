@@ -21,5 +21,5 @@ The core Django framework can be seen as an MVC architecture.
 #### What is Library, framework, API?  
 * A library is a collection of functions / objects that serves one particular purpose.
 * A framework is a collection of patterns and libraries,components, to help with building an application.
-* An API is an interface for other programs to interact with your program without having direct access.
+* An API is an interface for other programs(i.e libraries) to interact with your program without having direct access.
 
