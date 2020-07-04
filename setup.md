@@ -1,3 +1,4 @@
+0. python3 -m pip install django-crispy-forms
 0. create a app: 
   ```html
     python manage.py startapp user 
