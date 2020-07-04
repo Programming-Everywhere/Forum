@@ -1,3 +1,7 @@
+0. create a app: 
+  ```html
+    python manage.py startapp user 
+  ```
 1. create a user: in web
 2. create a post 
    1) login python3 manage.oy shell
