@@ -17,6 +17,9 @@ from django.contrib import admin
 from django.contrib.auth import views as auth_views
 from django.urls import path, include
 from users import views as user_views
+
+from django.conf import settings
+from django.conf.urls.static import static
 #1.when we click 127.0.0.1/blog -> 1st it will come to this file
 #2.then find if there is a path of 'blog/'
 #3.then it will check where this path route to. 
@@ -28,3 +31,6 @@ urlpatterns = [
     path('logout/', auth_views.LogoutView.as_view(template_name='users/logout.html'), name = 'logout'),
     path('', include('blog.urls')),
 ]
+
+if settings.DEBUG: 
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
