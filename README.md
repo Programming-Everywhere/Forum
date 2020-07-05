@@ -18,6 +18,12 @@ The core Django framework can be seen as an MVC architecture.
 * View:   a system for processing HTTP requests with a web templating system.(view.py)
 * Controller: a regular-expression-based URL dispatcher.(url.py)
 
+### Why Django
+* Fast: no need so many configurations
+* Many many libraries available 
+* Security & scalability
+ 
+
 #### What is Library, framework, API?  
 * A library is a collection of functions / objects that serves one particular purpose.
 * A framework is a collection of patterns and libraries,components, to help with building an application.
